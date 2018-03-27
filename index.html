@@ -16,8 +16,14 @@
         <div class="card text-white bg-info mt-5 p-5">
           <h2>Facts About Numbers</h2>
           <h5 class="mt-2">Please select your category</h5>
+          <select name="category" id="selectedItem" class="form-control mb-4">
+         <option value=math selected>Math</option>
+         <option value=year>Year</option>
+         <option value=trivia>Trivia</option>
+       </select>
           <input type="number" class="form-control form-control-lg" id="numberInput" placeholder="Enter any number">
                <div id="fact" class="card-body">
+                 <h4 id="factHeading" class="card-title"></h4>
                  <p id="factText" class="card-title"></p>
                </div>
           </div>
