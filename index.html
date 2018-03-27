@@ -9,7 +9,22 @@
   crossorigin="anonymous">
   <title>Facts About Numbers</title>
 </head>
-<body>
+<body class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card text-white bg-info mt-5 p-5">
+          <h2>Facts About Numbers</h2>
+          <h5 class="mt-2">Please select your category</h5>
+          <input type="number" class="form-control form-control-lg" id="numberInput" placeholder="Enter any number">
+               <div id="fact" class="card-body">
+                 <p id="factText" class="card-title"></p>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>
