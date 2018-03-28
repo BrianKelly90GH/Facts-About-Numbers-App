@@ -13,7 +13,7 @@ const factHeading= document.getElementById('factHeading');
    getFactFetch();
  });
 
- // Fetch with Fetch API
+ // Fetch the number facts with Fetch API
  function getFactFetch () {
    let number = numberInput.value;
    let category = selectedItem.value;
