@@ -18,8 +18,8 @@ const factHeading= document.getElementById('factHeading');
    let number = numberInput.value;
    let category = selectedItem.value;
    if(number != ''){
-     fetch('http://numbersapi.com/'+number+'/'+category).
-     then(response => response.text())
+     fetch('http://numbersapi.com/'+number+'/'+category)
+     .then(response => response.text())
      .then(data => {
        factHeading.innerText = category+ ' fact about '+number;
        factText.innerText = data;
