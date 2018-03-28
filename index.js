@@ -3,14 +3,14 @@ const numberInput = document.getElementById('numberInput');
 const factText = document.getElementById('factText')
 const factHeading= document.getElementById('factHeading');
 
-
- numberInput.addEventListener('input', getFactFetch);
-
+// Adding eventlistner to input box for the number entered
  selectedItem.addEventListener('change', e => {
-   let number = numberInput.value;
-   if(number!=''){
-     getFactFetch();
-   }
+    getFactFetch();
+ });
+
+// Adding eventlistner to the select box for the selected category
+ numberInput.addEventListener('input', e =>{
+   getFactFetch();
  });
 
  // Fetch with Fetch API
